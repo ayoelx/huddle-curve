@@ -6,62 +6,129 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Huddle landing page with curved sections</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Huddle landing page | curved sections</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  Try it free
+  <header>
+    <div class="container">
+      <nav>
+        <ul class="flex">
+          <li><img src="./images/logo.svg" alt="logo"></li>
+          <li><button>Try it free</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does 
-  your audience. Create connections with your users as you engage in genuine discussion. 
-
-  Get Started For Free
-
-  1.4k+
-  Communities Formed
-
-  2.7m+
-  Messages Sent
-
-  Grow Together
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
-
-  Flowing Conversations
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-  just-in-time loading for a more natural flow.
-
-  Your Users
-  It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-  once signed in to your app, your users can start chatting immediately.
-
-  Ready To Build Your Community?
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-  vestibulum a, ultrices quis sem.
+  <main>
+    <section id="hero">
+      <div class="container">
+        <div class="intro">
+          <h1>Build The Community Your Fans Will Love</h1>
+          <p>
+            Huddle re-imagines the way we build communities. You have a voice, but so does 
+            your audience. Create connections with your users as you engage in genuine discussion.
+          </p>
+          <button>Get Started For Free</button>
+        </div>
   
-  Phone: +1-543-123-4567
-  example@huddle.com
+        <img src="./images/screen-mockups.svg" alt="mockup" id="hero-img">
+        
+        <div id="ratings" class="flex">
+          <div class="rating">
+            <img src="./images/icon-communities.svg" alt="icon-com">
+            <h3>1.4k+</h3>
+            <p>Communities Formed</p>
+          </div>
+          <div class="rating">
+            <img src="./images/icon-messages.svg" alt="icon-messages">
+            <h3>2.7m+</h3>
+            <p>Messages Sent</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
+    <section id="features">
+      <div class="container">
+        <div id="grow-together" class="feature flex flex-reverse">
+          <img src="./images/illustration-grow-together.svg" alt="grow-together">
+          <div class="info">
+            <h2>Grow Together</h2>
+            <p>
+              Generate meaningful discussions with your audience and build a strong, loyal community.
+              Think of the insightful conversations you miss out on with a feedback form.
+            </p>
+          </div>
+        </div>
+        <div class="feature flex">
+          <img src="./images/illustration-flowing-conversation.svg" alt="flowing-conversation">
+          <div class="info">
+            <h2>Flowing Conversations</h2>
+            <p>
+              You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+              just-in-time loading for a more natural flow.
+            </p>
+          </div>
+        </div>
+        <div id="your-users" class="feature flex flex-reverse">
+          <img src="./images/illustration-your-users.svg" alt="your-users">
+          <div class="info">
+            <h2>Your Users</h2>
+            <p>
+              It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+              once signed in to your app, your users can start chatting immediately.
+            </p>
+          </div>
+        </div>  
+      </div>
+    </section>
 
-  Subscribe
+    <section id="cta">
+      <div class="container">
+        <h2>Ready To Build Your Community?</h2>
+        <button>Get Started For Free</button>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div class="container flex flex-reverse">
+      <div id="newsletter">
+        <h5>Newsletter</h5>
+        <p>
+          To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+          send you spam or pass on your email address
+        </p>
+        <form class="flex">
+          <input type="text" id="footer-input">
+          <button>Subscribe</button>
+        </form>
+      </div>
+
+      <div id="footer-links">
+        <img src="./images/logo-light.svg" alt="logo">
+        <ul>
+          <li><a href="#">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+            vestibulum a, ultrices quis sem.
+          </a></li>
+          <li><a href="#">Phone: +1-543-123-4567</a></li>
+          <li><a href="#">example@huddle.com</a></li>
+        </ul>
+        
+        <ul id="social-links" class="flex">
+          <li><i class="fab fa-facebook-square"></i></li>
+          <li><i class="fab fa-instagram"></i></i></li>
+          <li><i class="fab fa-twitter-square"></i></li>
+        </ul>
+        
+      </div>
+    </div>
   </footer>
+
+  <!-- icon link -->
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
 </body>
 </html>
